@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<meta charset="UTF-8">
+<title>Buscador de usuarios</title>
+<style>
+  body { font-family: Arial; }
+  input { padding: 8px; width: 300px;
+          border: 2px solid #6D6D6D;
+          border-radius: 6px; }
+  .valido   { border-color: #1B237D; }
+  .invalido { border-color: #A60311; }
+  #error { color: #A60311; min-height: 18px; }
+  li.item { cursor: pointer; padding: 4px; }
+  li.item:hover { background: #E8EAF6; }
+</style>
+
+<input id="buscar" placeholder="Buscar usuario (mín. 2 letras)">
+<div id="error" aria-live="polite"></div>
+<ul id="lista"></ul>
+<pre id="detalle"></pre>
+
+<script src="app.js"></script>
